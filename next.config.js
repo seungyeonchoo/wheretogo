@@ -13,9 +13,8 @@ const nextConfig = {
 		remotePatterns: [
 			{
 				protocol: "https",
-				hostname: "maps.googleapis.com",
+				hostname: "lh3.googleusercontent.com",
 				port: "",
-				pathname: "/maps/api/place/js/PhotoService.GetPhoto/**",
 			},
 		],
 	},

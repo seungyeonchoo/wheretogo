@@ -31,7 +31,16 @@ const Place = () => {
 				},
 				body: JSON.stringify({
 					includedTypes: ["restaurant"],
-					excludedTypes: ["hotel", "casino", "wedding_venue", "event_venue"],
+					excludedTypes: [
+						"hotel",
+						"casino",
+						"wedding_venue",
+						"event_venue",
+						"fast_food_restaurant",
+						"department_store",
+						"grocery_store",
+						"store",
+					],
 					rankPreference: "POPULARITY",
 					maxResultCount: 20,
 					locationRestriction: {
