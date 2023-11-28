@@ -67,7 +67,7 @@ src
   <details>
     <summary>1. 랜딩페이지</summary>
     <p align="center">
-    <img src="https://github.com/seungyeonchoo/react_ts_administrator_page/assets/100207630/104bbe65-67cc-4a91-aa58-47b875c763aa"/>
+    <img src="https://github.com/seungyeonchoo/makemyhabits/assets/100207630/13106336-c4d9-4d4a-9955-59ccc91dc5c5"/>
     </p>
     
     1. 서비스 랜딩 페이지 - 프로젝트에 대한 간략한 소개
@@ -78,7 +78,7 @@ src
   <details>
     <summary>2. 장소 검색 페이지 </summary>
     <p align="center">
-    <img src="https://github.com/seungyeonchoo/makemyhabits/assets/100207630/34da3188-c53a-4371-8114-66cbfa4140ae"/>
+    <img src="https://github.com/seungyeonchoo/makemyhabits/assets/100207630/dc25691c-e545-41e3-be24-1f9440b67a9d"/>
     </p>
 
     1. Google Map 구현
@@ -96,7 +96,7 @@ src
     <details>
     <summary>3. 장소 추천 페이지 </summary>
     <p align="center">
-    <img src="https://github.com/seungyeonchoo/react_ts_administrator_page/assets/100207630/3e0f0bb1-043a-4dab-a927-b303e75ea3d5"/>
+    <img src="https://github.com/seungyeonchoo/makemyhabits/assets/100207630/8178f4c9-dd63-47d0-a6a1-21d07e2bf8b7"/>
     </p>
 
     1. 장소 추천
