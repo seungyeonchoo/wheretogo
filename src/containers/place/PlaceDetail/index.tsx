@@ -3,10 +3,6 @@
 import { PlaceResult } from "@/utils/type";
 import OpeningHours from "./components/OpeningHours";
 import Detail from "./components/Detail";
-import Pet from "../../../../public/svgs/icon_pet.svg";
-import Dine from "../../../../public/svgs/icon_dine_in.svg";
-import Vegan from "../../../../public/svgs/icon_vegan.svg";
-import Alcohol from "../../../../public/svgs/icon_alcohol.svg";
 import About from "./components/About";
 import { ChangeEvent, useEffect, useState } from "react";
 import PageButton from "./components/PageButton";
@@ -30,7 +26,6 @@ const PlaceDetail = ({ place }: PlaceDetailProps) => {
 
 	return (
 		<section>
-			{/* basic info */}
 			<Detail
 				title={place?.displayName?.text}
 				type={place?.primaryTypeDisplayName?.text}
@@ -59,10 +54,7 @@ const PlaceDetail = ({ place }: PlaceDetailProps) => {
 					parking={place?.parkingOptions?.freeParkingLot || place?.parkingOptions?.paidParkingLot}
 				/>
 			)}
-
 			{input.page === "hours" && <OpeningHours opening_hours={place?.currentOpeningHours} />}
-
-			{/* reviews */}
 			{input.page === "reviews" && <Reviews reviews={place?.reviews} />}
 		</section>
 	);

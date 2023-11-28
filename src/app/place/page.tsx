@@ -1,11 +1,12 @@
 "use client";
 
 import PlaceDescription from "@/containers/place/PlaceDetail";
-import PlaceHeader from "@/containers/place/PlaceHeader";
 import { ReducerType } from "@/store";
 import { PlaceResult } from "@/utils/type";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
+import PlaceButton from "@/containers/place/PlaceButton";
+import PlaceHeader from "@/containers/place/PlaceHeader.tsx";
 
 const Place = () => {
 	const [list, setList] = useState<PlaceResult[]>([]);
@@ -60,12 +61,13 @@ const Place = () => {
 	useEffect(() => {
 		getPlaces().then((res) => setList(res.places));
 	}, []);
-	console.log(list);
+
 	return (
 		<main>
+			<PlaceHeader />
 			{list !== undefined && (
 				<>
-					<PlaceHeader handleNext={handleNext} handlePrev={handlePrev} place={list[idx]} />
+					<PlaceButton handleNext={handleNext} handlePrev={handlePrev} />
 					<PlaceDescription place={list[idx]} />
 				</>
 			)}

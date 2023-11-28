@@ -35,7 +35,7 @@ const ICON: { [key: string]: ReactNode } = {
 const About = (props: AboutProps) => {
 	const propsArr = Object.entries(props);
 	return (
-		<section className="flex flex-wrap w-[78vw] mx-auto p-[2rem] border-[0.125rem] rounded-[0.5rem] my-[3rem]">
+		<section className="flex flex-wrap w-[80vw] mx-auto px-[2rem] rounded-[0.5rem] my-[3rem]">
 			{propsArr.map((k) => {
 				if (k[1]) return <AboutBadge key={k[0]}>{ICON[k[0]]}</AboutBadge>;
 			})}
